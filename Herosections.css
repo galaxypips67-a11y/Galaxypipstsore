@@ -1,91 +1,50 @@
-:root{
-    --widthscale--:
+/* Color Variables for Hero sections */
+:root {
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --text: #14182b;
+  --muted: #000000;
+  --brand: rgb(29, 88, 96);
+  --hero-bg: #eaeefe;
+  --border: #e3e6ef;
+  --hover: rgb(43, 39, 58);
+  --herosec:rgb(241, 230, 222);
 }
 
 
+
+/* 4. BUTTON */
+.btn{
+    display: inline;
+    background: var(--brand);
+    color: #ffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+.btn:hover{
+    background-color: var(--hover);
+}
+
+/* Her0 */
 .hero{
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  align-items: center;
-  gap:40px;
-  padding: 65px 6%;
-  background: #eeddd2;
-
+ background: var(--herosec);
+  padding: 80px 0;
+  text-align: center 
 }
 
-.eyebrow{
-    color: var(--accent-color);
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 19px;
-}
 
 .hero h1{
-     color: #2b273a;
-    font-size: 52px;
+     font-size: clamp(2rem, 5vw, 3.2rem);
     line-height: 1.15;
-    margin: 0 0 20px;
+     margin: 0 0 1rem;
 }
 
-
-
-.hero-description{
-    color: #514b58;
-    font-size: 17px;
-    line-height: 1.7;
-    max-width: 450px;
-    margin-bottom: 25px;
+.hero p{
+ color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
 }
-
-.shop-button{
-    display: inline-block;
-    background-color: rgb(29, 88, 96);
-    color: white;
-    text-decoration: none;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.shop-button:hover{
-     background-color: #2b273a;
-}
-
-.hero-note{
-    color: #514b58;
-    font-size: 13px;
-    margin-top: 20px;
-}
-
-.hero-image{
-      flex: 1;
-    position: relative;
-}
-
-
-.hero-image img{
-     width: 100%;
-    display: block;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.sale-badge{
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    background-color: rgb(29, 88, 96);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: bold; 
-}
-
-.hero > div:first-child {
-    flex: 1;
-}
-

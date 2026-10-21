@@ -1,177 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./mobileheader.css">
     <link rel="stylesheet" href="./Herosections.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Armata&family=Commissioner:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Product.css">
-    <link rel="stylesheet" href="./galaxypipstech.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALAXYPIPS TECH HUB</title>
+    <title>Galaxypips TECH HUB</title>
 </head>
 <body>
-   <header class="Header-section">
-     <a href="#" class="logo">GALAXYPIPS TECH  <span>HUB</span></a>
-         <nav class="Nav-links">
-              <a href="#">Home</a>
-            <a href="#products">Laptops</a>
-            <a href="#deals">Deals</a>
-            <button class="cart-button" type="button">
-                🛒 Cart (<span>0</span>)
-            </button>
- </nav>
-</header> 
-<!--MAIN SECTION--> 
-<main>
-    
-   <section class="hero" id="deals">
-    <div class="hero-content">
-         <p class="eyebrow">THE BIG TECH SALE</p>
+     <!-- HEADER -->
+     <header>
+    <div class="container nav">
+      <a href="#" class="logo">GalaxypipsTech HUB</a>
+      <nav>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    </header>
+     <!-- HERO -->
+      <section class="hero">
+    <div class="container">
+      <h1>Quality laptops at fair prices</h1>
+      <p>Brand-new laptops for school, work and gaming, with delivery and warranty.</p>
+      <a href="#shop" class="btn">Shop now</a>
+    </div>
+  </section>
 
-                <h1>Power Up Your World.</h1>
+  <!-- PRODUCTS -->
+  <section id="shop" class="section">
+    <div class="container">
+      <h2>Our laptops</h2>
+      <p class="sub">Pick the one that fits your needs and budget.</p>
 
-                <p class="hero-description">
-                    Discover laptops for Work, School, Gaming,
-                    and everything in between.
-                </p>
+      <div class="products">
 
-                <a href="#products" class="shop-button">
-                    Shop Laptops →
-                </a>
+        <article class="card" data-category="student">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80" alt="laptop open a desk"></div>
+          <span class="tag">Student</span>
+          <h3>Air 14</h3>
+          <p class="specs">Core i5 · 8GB RAM · 256GB SSD</p>
+          <p class="price">#660,480</p>
+          <button class="btn">Order now</button>
+        </article>
 
-                <p class="hero-note">
-                    Great deals. Quality devices. Trusted service.
-                </p>
-            </div>
-            <div class="hero-image">
-                <img
-                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
-                    alt="Laptop open on a desk"
-                >
-                <div class="sale-badge">HOT DEALS</div>
-            </div>
-   </section>
-   <section class="products-section" id="products">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">OUR COLLECTION</p>
-                    <h2>Featured Laptops</h2>
-                </div>
+        <article class="card" data-category="student">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80" alt="Student laptops"></div>
+          <span class="tag">Student</span>
+          <h3>Lite 15</h3>
+          <p class="specs">Ryzen 5 · 8GB RAM · 512GB SSD</p>
+          <p class="price">#715,520</p>
+          <button class="btn">Order now</button>
+        </article>
 
-                <p>Find the right machine for your needs.</p>
-            </div>
+        <article class="card" data-category="business">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt=""></div>
+          <span class="tag">Business</span>
+          <h3>Pro 14</h3>
+          <p class="specs">Core i7 · 16GB RAM · 512GB SSD</p>
+          <p class="price">#1,224,640</p>
+          <button class="btn">Order now</button>
+        </article>
 
-            <div class="product-grid">
+        <article class="card" data-category="gaming">
+          <div class="thumb"><img src="https://plus.unsplash.com/premium_photo-1776266654906-e28b15193298?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Gaming laptops"></div>
+          <span class="tag">Gaming</span>
+          <h3>Force G5</h3>
+          <p class="specs">Ryzen 7 · RTX 4050 · 16GB RAM</p>
+          <p class="price">#1,444,800</p>
+          <button class="btn">Order now</button>
+        </article>
 
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
-                        alt="Silver laptop"
-                    >
+      </div>
+    </div>
+  </section>
 
-                    <div class="product-info">
-                        <p class="product-category">EVERYDAY COMPUTING</p>
-                        <h3>HP EliteBook</h3>
-                        <p class="product-description">
-                            Reliable performance for work and study.
-                        </p>
-
-                        <div class="product-bottom">
-                            <p class="price">₦450,000</p>
-                            <button type="button" class="add-button">
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80"
-                        alt="Laptop computer"
-                    >
-
-                    <div class="product-info">
-                        <p class="product-category">BUSINESS</p>
-                        <h3>Dell Latitude</h3>
-                        <p class="product-description">
-                            A practical choice for everyday productivity.
-                        </p>
-
-                        <div class="product-bottom">
-                            <p class="price">₦380,000</p>
-                            <button type="button" class="add-button">
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
-                        alt="Laptop computer on a desk"
-                    >
-
-                    <div class="product-info">
-                        <p class="product-category">PREMIUM</p>
-                        <h3>MacBook</h3>
-                        <p class="product-description">
-                            A sleek laptop for creative workflows.
-                        </p>
-
-                        <div class="product-bottom">
-                            <p class="price">₦850,000</p>
-                            <button type="button" class="add-button">
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section> 
-</main>
-<footer class="site-footer">
-      <p>© 2026 GALAXYPIPS TECH HUB. Your next laptop starts here.</p>
-</footer>           
 </body>
 </html>
-
-
 <style>
+
+:root {
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --text: #14182b;
+  --muted: #000000;
+  --brand: rgb(29, 88, 96);
+  --hero-bg: #eaeefe;
+  --border: #e3e6ef;
+}
+
 *{
     box-sizing: border-box;
 }
 
-
-html{
-    scroll-behavior: smooth;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-body {
+body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(239, 239, 241);
-    color: #171717;
-    padding: 0;
-    width: 100%;
+    font-family: 'poppins' ;
+    background: var(--bg);
+    color: var(--text);    
 }
 
-img{
-    max-width: 100%;
-}
 
-a {
+a{
     text-decoration: none;
-    color: inherit;
+    color:  rgb(29, 88, 96);
+
 }
 
-button {
-    font: inherit;
-    cursor: pointer;
+/* 3. CONTAINER: keeps content centred and not too wide */
+
+.container{
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+
+
+
+
+/*Navigation sections */
+
+nav{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a{
+    font-weight: 500;
+    margin-left: 1.5rem;
+}
+
+
+.logo{
+   font-family: 20.4px;
+   font-size: 20px;
+   color: var(--brand);
+   font-weight: bolder;
+}
+
+header {
+  background:#ffffff; 
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+ 
 }
 
 </style>
