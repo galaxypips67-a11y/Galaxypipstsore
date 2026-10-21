@@ -32,7 +32,9 @@
 .hero{
  background: var(--herosec);
   padding: 80px 0;
-  text-align: center 
+  text-align: center;
+  margin-top: 30px;
+
 }
 
 
@@ -47,4 +49,16 @@
   font-size: 1.1rem;
   max-width: 34rem;
   margin: 0 auto 1.5rem;
+}
+
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text);
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./mobileheader.css">
     <link rel="stylesheet" href="./Herosections.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,8 @@
      <header>
     <div class="container nav">
       <a href="#" class="logo">GalaxypipsTech HUB</a>
-      <nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav id="menu">
         <a href="#shop">Shop</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -96,6 +98,11 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     margin: 0;
     font-family: 'poppins' ;
@@ -147,7 +154,15 @@ header {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
+  z-index: 10;
  
 }
 
 </style>
+
+
+<script src="./galaxytech.js">
+
+
+
+</script>
